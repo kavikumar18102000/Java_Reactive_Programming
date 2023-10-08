@@ -29,5 +29,12 @@ public class Stream_Implemet {
                      .orElse(-1);
         System.out.println(value);
 
+        //print all the user names that have the uno form the getNumber
+        StreamSources.getNumbers()
+                .flatMap(id -> StreamSources.getUser().filter(user ->user.getUno() == id))
+                .map(user -> user.getName())
+                .forEach(userName -> System.out.println(userName));
+
+
     }
 }

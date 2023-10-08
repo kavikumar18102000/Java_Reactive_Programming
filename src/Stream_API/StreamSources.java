@@ -13,9 +13,9 @@ public class StreamSources {
 
     public static Stream<User> getUser(){
         return Stream.of(
-            new User(10,"Arya"),
-            new User(20,"kumar"),
-            new User(30,"kavi")
+            new User(1,"Arya"),
+            new User(2,"kumar"),
+            new User(23,"kavi")
         );
     }
 }
